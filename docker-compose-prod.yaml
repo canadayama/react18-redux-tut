@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  react-app:
+    container_name: react18-redux-prod
+    build:
+      dockerfile: Dockerfile.prod
+    stdin_open: true
+    tty: true    
+    ports:
+      - ${NGINX_PORT_OUT}:80
+    env_file:
+      - ./react-app/.env

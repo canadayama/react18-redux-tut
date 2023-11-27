@@ -1,0 +1,17 @@
+ARG NODE_VERSION=18
+
+FROM node:${NODE_VERSION}-alpine as base
+
+ENV LANG=C.UTF-8
+
+ENV NODE_ENV=development
+ENV HOST="0.0.0.0"
+ENV PORT=3000
+
+WORKDIR /react-app
+
+RUN npm install -g npm@latest
+
+COPY ./react-app/package.json .
+
+RUN npm install

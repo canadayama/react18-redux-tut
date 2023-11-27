@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  react-app:
+    build:
+      dockerfile: Dockerfile.dev
+    container_name: react18-redux-app
+    command: ["npm", "start"]
+    stdin_open: true
+    tty: true
+    env_file:
+     - ./react-app/.env
+    ports:
+      - 3000:3000
+    volumes:
+      - ./react-app:/react-app:ro
+      - node_modules:/react-app/node_modules
+    networks:
+      - network
+
+volumes:
+  node_modules:
+
+networks:
+  network:
