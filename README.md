@@ -8,12 +8,16 @@
 
 `$ npm install --save-dev @babel/plugin-proposal-private-property-in-object`
 
-
 # Full Tutorial for Beginners (freeCodeCamp.org)
+
 1. Setup
 2. Folder structure
 3. First Component
 4. Extensions and settings.json
 5. JSX
-6.
-7.
+6. Nest Components
+7. Booklist
+8.
+9.
+10.
+11.
