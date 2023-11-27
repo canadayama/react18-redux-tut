@@ -3,7 +3,7 @@ import Title from './Title';
 import Author from './Author';
 
 const Book = () => {
-  return <article>
+  return <article className='book'>
     <Image />
     <Title />
     <Author />

@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Book from './Book';
+import './index.css';
 
 const BookList = () => {
   return (
-    <section>
+    <section className='booklist'>
       <Book />
       <Book />
       <Book />

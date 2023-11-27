@@ -17,7 +17,7 @@
 5. JSX
 6. Nest Components
 7. Booklist
-8.
-9.
+8. CSS
+9. Images
 10.
 11.
